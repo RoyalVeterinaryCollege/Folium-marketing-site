@@ -15,26 +15,6 @@
         }
     });
 
-    // Activate scrollspy to add active class to navbar items on scroll
-    $('body').scrollspy({
-        target: '#mainNav',
-        offset: 48
-    });
-
-    // Closes responsive menu when a link is clicked
-    $('.navbar-collapse>ul>li>a').click(function() {
-        $('.navbar-collapse').collapse('hide');
-    });
-
-    // Collapse the navbar when page is scrolled
-    $(window).scroll(function() {
-        if ($("#mainNav").offset().top > 100) {
-            $("#mainNav").addClass("navbar-shrink");
-        } else {
-            $("#mainNav").removeClass("navbar-shrink");
-        }
-    });
-
     // Scroll reveal calls
     window.sr = ScrollReveal();
     sr.reveal('.sr-image', {
@@ -70,21 +50,5 @@
         scale: 0.3,
         distance: '0px'
     }, 300);
-
-    // Magnific popup calls
-    $('.popup-gallery').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1]
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-        }
-    });
 
 })(jQuery); // End of use strict
