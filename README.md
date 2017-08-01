@@ -1,12 +1,6 @@
-# [Folium](https://royalveterinarycollege.github.io/Folium-marketing-site/) 
+# [Folium Marketing](https://royalveterinarycollege.github.io/Folium-marketing-site/) 
 
 [Folium](https://royalveterinarycollege.github.io/Folium-marketing-site/) is a one page marketing site for Folium (https://folium.rvc.ac.uk/).
-
-
-
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-creative/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/creative/).
 
 ## Creator
 
