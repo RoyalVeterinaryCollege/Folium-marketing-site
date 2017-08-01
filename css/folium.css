@@ -32,6 +32,9 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   font-weight: 100; }
 
+h2 {
+  font-size: 1.9rem; }
+
 p {
   font-size: 16px;
   line-height: 2rem;
@@ -70,6 +73,9 @@ section {
   color: white;
   background: #222222;
   text-shadow: none; }
+
+.hide-overflow {
+  overflow: hidden; }
 
 img::selection {
   color: white;
@@ -242,15 +248,6 @@ header.masthead {
   color: white; }
   #contact a {
     color: white; }
-
-.service-box {
-  max-width: 400px;
-  margin: 50px auto 0; }
-  @media (min-width: 992px) {
-    .service-box {
-      margin: 20px auto 0; } }
-  .service-box p {
-    margin-bottom: 0; }
 
 .portfolio-box {
   position: relative;

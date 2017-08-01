@@ -37,6 +37,9 @@ h5,
 h6 {
     @include sans-serif-font;
 }
+h2 {
+	font-size: 1.9rem;
+}
 
 p {
     font-size: 16px;
@@ -84,6 +87,9 @@ section {
     color: white;
     background: $gray-darker;
     text-shadow: none;
+}
+.hide-overflow {
+	overflow: hidden;
 }
 
 img::selection {
