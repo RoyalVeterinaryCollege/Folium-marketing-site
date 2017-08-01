@@ -1,0 +1,92 @@
+// Mixins
+// Bootstrap Button Variant
+@mixin button-variant($color, $background, $border) {
+    color: $color;
+    border-color: $border;
+    background-color: $background;
+    &:focus,
+    &.focus {
+        color: $color;
+        border-color: darken($border, 25%);
+        background-color: darken($background, 10%);
+    }
+    &:hover {
+        color: $color;
+        border-color: darken($border, 12%);
+        background-color: darken($background, 10%);
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        color: $color;
+        border-color: darken($border, 12%);
+        background-color: darken($background, 10%);
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $color;
+            border-color: darken($border, 25%);
+            background-color: darken($background, 17%);
+        }
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+        background-image: none;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus,
+        &.focus {
+            border-color: $border;
+            background-color: $background;
+        }
+    }
+    .badge {
+        color: $background;
+        background-color: $color;
+    }
+}
+
+@mixin transition-all() {
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
+}
+
+@mixin background-cover() {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@mixin serif-font() {
+    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@mixin sans-serif-font() {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 100;
+}
+
+//Material Shadows
+@mixin material_box_shadow($level) {
+    @if $level == 1 {
+        box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.2), 0 0.0625rem 0.0625rem 0 rgba(0, 0, 0, 0.14), 0  0.125rem .0625rem -.0625rem rgba(0, 0, 0, 0.12);
+    }
+    @else if $level == 2 {
+        box-shadow: 0 0.0625rem 0.3125rem 0 rgba(0, 0, 0, 0.2), 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.14), 0  0.1875rem  0.0625rem  -0.125rem rgba(0, 0, 0, 0.12);
+    }
+    @else if $level == 3 {
+        box-shadow: 0 0.0625rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.1875rem 0.25rem 0 rgba(0, 0, 0, 0.14), 0  0.1875rem  0.1875rem  -0.125rem rgba(0, 0, 0, 0.12);
+    }
+    @else if $level == 4 {
+         box-shadow: 0 0.125rem 0.25rem -0.0625rem rgba(0, 0, 0, 0.2), 0 0.25rem 0.3125rem 0 rgba(0, 0, 0, 0.14), 0  0.0625rem 0.625rem  0 rgba(0, 0, 0, 0.12);
+    }
+    @else if $level == 5 {
+         box-shadow: 0 0.3875rem 0.6125rem -0.1225rem rgba(0, 0, 0, 0.5), 0 0.6225rem 0.5rem 0 rgba(0, 0, 0, 0.24), 0  0.1225rem 0.875rem  0 rgba(0, 0, 0, 0.22);
+    }
+}
